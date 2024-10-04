@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+    .container{
+        padding: 50px;
+    }
+    button{
+        background-color: aqua;
+        width: 100px;
+        padding:15px;
+        /* transition-duration: 5s;
+        transition-property: background-color; */
+        color: black;
+        transition:width 2s cubic-bezier(0,0,0,0);
+    }
+
+    button:hover{
+        background-color: red;
+        width:200px;
+        color:white;
+        transform: translate(30px);
+    }
+    h1{
+        text-align: center;
+        font-size: 60px;
+        color: blueviolet;
+        transition-duration: 5s;
+        transition-property:all;
+    }
+    h1:hover{
+        font-size: 90px;
+        color:rgb(252, 4, 4);
+    }
+        </style>
+</head>
+<body>
+    <div>
+        <button>Click Here</button>
+        <h1>Hello World!</h1>
+    </div>
+</body>
+</html>
